@@ -1,1668 +1,956 @@
 {
- "generated_at": "2026-11-15T15:29:27+00:00",
- "source": "demo",
+ "generated_at": "2026-11-15T22:48:04+00:00",
+ "source": "apewisdom",
  "subreddits": [
-  "wallstreetbets",
-  "stocks",
-  "options"
+  "wallstreetbets"
  ],
  "window_hours": 24,
  "stats": {
-  "texts": 1808,
-  "texts_with_tickers": 1805,
+  "texts": 0,
+  "texts_with_tickers": 0,
   "posts": 0,
-  "comments": 1808,
-  "authors": 781
+  "comments": 0,
+  "authors": 0
  },
  "ai": {
-  "enabled": true,
-  "model": "simulado",
-  "classified": 1802,
+  "enabled": false,
+  "model": "claude-haiku-5-5",
+  "classified": 0,
   "top_n": 15
  },
- "global_sentiment": {
-  "bull": 957,
-  "bear": 573,
-  "neutral": 272,
-  "meme": 531,
-  "n": 1802,
-  "score": 0.213
- },
+ "global_sentiment": null,
  "tickers": [
   {
    "ticker": "NVDA",
-   "name": "NVIDIA Corp",
-   "mentions": 419,
-   "unique_authors": 336,
-   "upvotes": 1345,
-   "cashtag_pct": 21,
-   "sentiment": {
-    "bull": 307,
-    "bear": 43,
-    "neutral": 69,
-    "meme": 115,
-    "n": 419,
-    "score": 0.63
-   },
-   "samples": [
-    {
-     "text": "anyone holding NVDA through the split?",
-     "score": 101,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": true
-    },
-    {
-     "text": "Loaded more NVDA at the open, earnings will rip",
-     "score": 79,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "$NVDA calls printing, see you on the moon 🚀",
-     "score": 77,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "my NVDA 0DTE calls just 4x'd lmao",
-     "score": 71,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "NVDA bagholders in shambles 🌈🐻",
-     "score": 35,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "Loaded more NVDA at the open, earnings will rip",
-     "score": 33,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "NVDA is criminally undervalued, holding till 2027",
-     "score": 24,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "Loaded more NVDA at the open, earnings will rip",
-     "score": 20,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    }
-   ],
+   "name": "NVIDIA",
+   "mentions": 337,
+   "unique_authors": null,
+   "upvotes": 6741,
+   "cashtag_pct": null,
+   "prev_24h": 280,
+   "sentiment": null,
+   "samples": [],
    "price": {
-    "last": 225.6,
-    "chg_1d": -2.27,
-    "chg_5d": -0.85,
-    "asof": "2026-11-15"
+    "last": 162.85,
+    "chg_1d": -2.01,
+    "chg_5d": -12.75,
+    "asof": "2026-11-13"
    },
    "history": [
     {
-     "date": "2026-11-05",
-     "mentions": 262
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 187
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 207
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 377
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 369
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 186
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 208
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 212
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 186
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 358
-    },
-    {
      "date": "2026-11-15",
-     "mentions": 419
+     "mentions": 337
     }
    ],
-   "baseline": 270.9,
-   "ratio": 1.55
-  },
-  {
-   "ticker": "TSLA",
-   "name": "Tesla, Inc.",
-   "mentions": 308,
-   "unique_authors": 256,
-   "upvotes": 922,
-   "cashtag_pct": 22,
-   "sentiment": {
-    "bull": 103,
-    "bear": 165,
-    "neutral": 40,
-    "meme": 90,
-    "n": 308,
-    "score": -0.201
-   },
-   "samples": [
-    {
-     "text": "TSLA bagholders in shambles 🌈🐻",
-     "score": 49,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "my TSLA 0DTE calls just 4x'd lmao",
-     "score": 34,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "TSLA bagholders in shambles 🌈🐻",
-     "score": 33,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "TSLA puts are free money, this is overvalued garbage",
-     "score": 31,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "bought $TSLA puts expiring Friday, valuation makes no sense",
-     "score": 21,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "sold all my TSLA, chart looks like a cliff",
-     "score": 21,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "bought $TSLA puts expiring Friday, valuation makes no sense",
-     "score": 20,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "TSLA is criminally undervalued, holding till 2027",
-     "score": 19,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    }
-   ],
-   "price": {
-    "last": 549.47,
-    "chg_1d": -0.28,
-    "chg_5d": -0.83,
-    "asof": "2026-11-15"
-   },
-   "history": [
-    {
-     "date": "2026-11-05",
-     "mentions": 210
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 249
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 161
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 278
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 255
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 175
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 237
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 185
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 214
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 250
-    },
-    {
-     "date": "2026-11-15",
-     "mentions": 308
-    }
-   ],
-   "baseline": 227.7,
-   "ratio": 1.35
-  },
-  {
-   "ticker": "SPY",
-   "name": "SPDR S&P 500 ETF",
-   "mentions": 260,
-   "unique_authors": 219,
-   "upvotes": 755,
-   "cashtag_pct": 20,
-   "sentiment": {
-    "bull": 95,
-    "bear": 121,
-    "neutral": 44,
-    "meme": 74,
-    "n": 260,
-    "score": -0.1
-   },
-   "samples": [
-    {
-     "text": "sold all my SPY, chart looks like a cliff",
-     "score": 100,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "bought $SPY puts expiring Friday, valuation makes no sense",
-     "score": 36,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "bought $SPY puts expiring Friday, valuation makes no sense",
-     "score": 27,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "sold all my SPY, chart looks like a cliff",
-     "score": 22,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "SPY puts are free money, this is overvalued garbage",
-     "score": 20,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "bought $SPY puts expiring Friday, valuation makes no sense",
-     "score": 19,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "sold all my SPY, chart looks like a cliff",
-     "score": 15,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "bought $SPY puts expiring Friday, valuation makes no sense",
-     "score": 13,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    }
-   ],
-   "price": {
-    "last": 26.65,
-    "chg_1d": 1.71,
-    "chg_5d": -3.63,
-    "asof": "2026-11-15"
-   },
-   "history": [
-    {
-     "date": "2026-11-05",
-     "mentions": 180
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 229
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 213
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 133
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 165
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 136
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 158
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 232
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 162
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 226
-    },
-    {
-     "date": "2026-11-15",
-     "mentions": 260
-    }
-   ],
-   "baseline": 173.1,
-   "ratio": 1.5
-  },
-  {
-   "ticker": "PLTR",
-   "name": "Palantir Technologies",
-   "mentions": 190,
-   "unique_authors": 169,
-   "upvotes": 446,
-   "cashtag_pct": 24,
-   "sentiment": {
-    "bull": 116,
-    "bear": 46,
-    "neutral": 28,
-    "meme": 67,
-    "n": 190,
-    "score": 0.368
-   },
-   "samples": [
-    {
-     "text": "Loaded more PLTR at the open, earnings will rip",
-     "score": 27,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "$PLTR calls printing, see you on the moon 🚀",
-     "score": 16,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "$PLTR calls printing, see you on the moon 🚀",
-     "score": 14,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "my PLTR 0DTE calls just 4x'd lmao",
-     "score": 13,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "what do you guys think about PLTR before earnings?",
-     "score": 9,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": true
-    },
-    {
-     "text": "bought $PLTR puts expiring Friday, valuation makes no sense",
-     "score": 9,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "anyone holding PLTR through the split?",
-     "score": 9,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "anyone holding PLTR through the split?",
-     "score": 9,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": true
-    }
-   ],
-   "price": {
-    "last": 222.38,
-    "chg_1d": 3.88,
-    "chg_5d": 0.78,
-    "asof": "2026-11-15"
-   },
-   "history": [
-    {
-     "date": "2026-11-05",
-     "mentions": 163
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 141
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 78
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 155
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 76
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 167
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 88
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 157
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 99
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 99
-    },
-    {
-     "date": "2026-11-15",
-     "mentions": 190
-    }
-   ],
-   "baseline": 120.1,
-   "ratio": 1.58
-  },
-  {
-   "ticker": "GME",
-   "name": "GameStop Corp.",
-   "mentions": 140,
-   "unique_authors": 133,
-   "upvotes": 2950,
-   "cashtag_pct": 19,
-   "sentiment": {
-    "bull": 79,
-    "bear": 35,
-    "neutral": 26,
-    "meme": 47,
-    "n": 140,
-    "score": 0.314
-   },
-   "samples": [
-    {
-     "text": "anyone holding GME through the split?",
-     "score": 2422,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "what do you guys think about GME before earnings?",
-     "score": 146,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "GME is criminally undervalued, holding till 2027",
-     "score": 39,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "GME bagholders in shambles 🌈🐻",
-     "score": 17,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "Loaded more GME at the open, earnings will rip",
-     "score": 17,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "my GME 0DTE calls just 4x'd lmao",
-     "score": 16,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "GME is criminally undervalued, holding till 2027",
-     "score": 12,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "Loaded more GME at the open, earnings will rip",
-     "score": 11,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    }
-   ],
-   "price": {
-    "last": 755.27,
-    "chg_1d": -3.74,
-    "chg_5d": 2.48,
-    "asof": "2026-11-15"
-   },
-   "history": [
-    {
-     "date": "2026-11-05",
-     "mentions": 88
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 58
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 88
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 105
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 70
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 109
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 101
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 100
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 98
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 69
-    },
-    {
-     "date": "2026-11-15",
-     "mentions": 140
-    }
-   ],
-   "baseline": 93.1,
-   "ratio": 1.5
+   "baseline": null,
+   "ratio": null
   },
   {
    "ticker": "AMD",
-   "name": "Advanced Micro Devices",
-   "mentions": 120,
-   "unique_authors": 112,
-   "upvotes": 384,
-   "cashtag_pct": 22,
-   "sentiment": {
-    "bull": 57,
-    "bear": 52,
-    "neutral": 11,
-    "meme": 40,
-    "n": 120,
-    "score": 0.042
-   },
-   "samples": [
-    {
-     "text": "AMD puts are free money, this is overvalued garbage",
-     "score": 48,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "bought $AMD puts expiring Friday, valuation makes no sense",
-     "score": 34,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "$AMD calls printing, see you on the moon 🚀",
-     "score": 29,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "AMD bagholders in shambles 🌈🐻",
-     "score": 18,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "Loaded more AMD at the open, earnings will rip",
-     "score": 16,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "$AMD calls printing, see you on the moon 🚀",
-     "score": 15,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "my AMD 0DTE calls just 4x'd lmao",
-     "score": 14,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "AMD bagholders in shambles 🌈🐻",
-     "score": 13,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    }
-   ],
+   "name": "AMD",
+   "mentions": 42,
+   "unique_authors": null,
+   "upvotes": 100,
+   "cashtag_pct": null,
+   "prev_24h": 60,
+   "sentiment": null,
+   "samples": [],
    "price": {
-    "last": 148.3,
-    "chg_1d": -3.5,
-    "chg_5d": -9.56,
-    "asof": "2026-11-15"
+    "last": 534.06,
+    "chg_1d": -8.75,
+    "chg_5d": 18.93,
+    "asof": "2026-11-13"
    },
    "history": [
-    {
-     "date": "2026-11-05",
-     "mentions": 78
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 106
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 74
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 66
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 102
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 55
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 54
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 54
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 70
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 92
-    },
     {
      "date": "2026-11-15",
-     "mentions": 120
-    }
-   ],
-   "baseline": 70.4,
-   "ratio": 1.7
-  },
-  {
-   "ticker": "HOOD",
-   "name": "Robinhood Markets",
-   "mentions": 80,
-   "unique_authors": 77,
-   "upvotes": 226,
-   "cashtag_pct": 19,
-   "sentiment": {
-    "bull": 60,
-    "bear": 10,
-    "neutral": 10,
-    "meme": 21,
-    "n": 80,
-    "score": 0.625
-   },
-   "samples": [
-    {
-     "text": "HOOD is criminally undervalued, holding till 2027",
-     "score": 37,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "HOOD is criminally undervalued, holding till 2027",
-     "score": 18,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "bought $HOOD puts expiring Friday, valuation makes no sense",
-     "score": 14,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "HOOD bagholders in shambles 🌈🐻",
-     "score": 10,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "bought $HOOD puts expiring Friday, valuation makes no sense",
-     "score": 9,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "HOOD bagholders in shambles 🌈🐻",
-     "score": 8,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "Loaded more HOOD at the open, earnings will rip",
-     "score": 7,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "my HOOD 0DTE calls just 4x'd lmao",
-     "score": 7,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    }
-   ],
-   "price": {
-    "last": 478.02,
-    "chg_1d": 0.25,
-    "chg_5d": -9.43,
-    "asof": "2026-11-15"
-   },
-   "history": [
-    {
-     "date": "2026-11-05",
-     "mentions": 39
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 58
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 52
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 43
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 71
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 36
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 40
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 40
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 70
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 39
-    },
-    {
-     "date": "2026-11-15",
-     "mentions": 80
-    }
-   ],
-   "baseline": 48.4,
-   "ratio": 1.65
-  },
-  {
-   "ticker": "RKLB",
-   "name": "Rocket Lab",
-   "mentions": 75,
-   "unique_authors": 74,
-   "upvotes": 364,
-   "cashtag_pct": 24,
-   "sentiment": {
-    "bull": 52,
-    "bear": 12,
-    "neutral": 11,
-    "meme": 18,
-    "n": 75,
-    "score": 0.533
-   },
-   "samples": [
-    {
-     "text": "Loaded more RKLB at the open, earnings will rip",
-     "score": 98,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "RKLB bagholders in shambles 🌈🐻",
-     "score": 52,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "RKLB is criminally undervalued, holding till 2027",
-     "score": 31,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "Loaded more RKLB at the open, earnings will rip",
-     "score": 24,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "$RKLB calls printing, see you on the moon 🚀",
-     "score": 22,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "my RKLB 0DTE calls just 4x'd lmao",
-     "score": 11,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "Loaded more RKLB at the open, earnings will rip",
-     "score": 7,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "my RKLB 0DTE calls just 4x'd lmao",
-     "score": 6,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    }
-   ],
-   "price": {
-    "last": 71.67,
-    "chg_1d": 0.71,
-    "chg_5d": -8.35,
-    "asof": "2026-11-15"
-   },
-   "history": [
-    {
-     "date": "2026-11-05",
-     "mentions": 17
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 18
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 18
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 11
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 15
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 11
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 14
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 13
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 16
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 22
-    },
-    {
-     "date": "2026-11-15",
-     "mentions": 75
-    }
-   ],
-   "baseline": 14.6,
-   "ratio": 5.15
-  },
-  {
-   "ticker": "INTC",
-   "name": "Intel Corp",
-   "mentions": 60,
-   "unique_authors": 57,
-   "upvotes": 126,
-   "cashtag_pct": 18,
-   "sentiment": {
-    "bull": 16,
-    "bear": 31,
-    "neutral": 13,
-    "meme": 17,
-    "n": 60,
-    "score": -0.25
-   },
-   "samples": [
-    {
-     "text": "INTC reports Thursday after close",
-     "score": 10,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "my INTC 0DTE calls just 4x'd lmao",
-     "score": 8,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "INTC reports Thursday after close",
-     "score": 8,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "INTC is criminally undervalued, holding till 2027",
-     "score": 8,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "bought $INTC puts expiring Friday, valuation makes no sense",
-     "score": 8,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "INTC is criminally undervalued, holding till 2027",
-     "score": 7,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "INTC bagholders in shambles 🌈🐻",
-     "score": 5,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "bought $INTC puts expiring Friday, valuation makes no sense",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    }
-   ],
-   "price": {
-    "last": 281.62,
-    "chg_1d": 6.4,
-    "chg_5d": 3.72,
-    "asof": "2026-11-15"
-   },
-   "history": [
-    {
-     "date": "2026-11-05",
      "mentions": 42
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 28
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 38
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 46
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 26
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 47
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 53
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 47
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 41
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 50
-    },
-    {
-     "date": "2026-11-15",
-     "mentions": 60
     }
    ],
-   "baseline": 44.3,
-   "ratio": 1.35
+   "baseline": null,
+   "ratio": null
   },
   {
-   "ticker": "SMCI",
-   "name": "Super Micro Computer",
-   "mentions": 55,
-   "unique_authors": 53,
-   "upvotes": 202,
-   "cashtag_pct": 24,
-   "sentiment": {
-    "bull": 18,
-    "bear": 31,
-    "neutral": 6,
-    "meme": 12,
-    "n": 55,
-    "score": -0.236
-   },
-   "samples": [
-    {
-     "text": "$SMCI calls printing, see you on the moon 🚀",
-     "score": 63,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "Loaded more SMCI at the open, earnings will rip",
-     "score": 24,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "sold all my SMCI, chart looks like a cliff",
-     "score": 21,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "anyone holding SMCI through the split?",
-     "score": 8,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "sold all my SMCI, chart looks like a cliff",
-     "score": 6,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "SMCI puts are free money, this is overvalued garbage",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "my SMCI 0DTE calls just 4x'd lmao",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "sold all my SMCI, chart looks like a cliff",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    }
-   ],
+   "ticker": "SPCX",
+   "name": "SpaceX",
+   "mentions": 40,
+   "unique_authors": null,
+   "upvotes": 199,
+   "cashtag_pct": null,
+   "prev_24h": 45,
+   "sentiment": null,
+   "samples": [],
    "price": {
-    "last": 433.38,
-    "chg_1d": -0.7,
-    "chg_5d": -13.11,
-    "asof": "2026-11-15"
+    "last": 139.11,
+    "chg_1d": -0.59,
+    "chg_5d": 3.6,
+    "asof": "2026-11-13"
    },
    "history": [
     {
-     "date": "2026-11-05",
-     "mentions": 43
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 22
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 40
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 33
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 39
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 26
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 44
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 31
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 45
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 38
-    },
-    {
      "date": "2026-11-15",
-     "mentions": 55
+     "mentions": 40
     }
    ],
-   "baseline": 36.6,
-   "ratio": 1.5
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "SPY",
+   "name": "SPDR S&amp;P 500 ETF Trust",
+   "mentions": 37,
+   "unique_authors": null,
+   "upvotes": 98,
+   "cashtag_pct": null,
+   "prev_24h": 59,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 754.37,
+    "chg_1d": -0.36,
+    "chg_5d": 2.59,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 37
+    }
+   ],
+   "baseline": null,
+   "ratio": null
   },
   {
    "ticker": "MSTR",
-   "name": "Strategy Inc",
-   "mentions": 50,
-   "unique_authors": 49,
-   "upvotes": 433,
-   "cashtag_pct": 8,
-   "sentiment": {
-    "bull": 28,
-    "bear": 15,
-    "neutral": 7,
-    "meme": 17,
-    "n": 50,
-    "score": 0.26
-   },
-   "samples": [
-    {
-     "text": "MSTR reports Thursday after close",
-     "score": 291,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "sold all my MSTR, chart looks like a cliff",
-     "score": 27,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "anyone holding MSTR through the split?",
-     "score": 18,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "Loaded more MSTR at the open, earnings will rip",
-     "score": 17,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": true
-    },
-    {
-     "text": "Loaded more MSTR at the open, earnings will rip",
-     "score": 10,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "MSTR bagholders in shambles 🌈🐻",
-     "score": 6,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": true
-    },
-    {
-     "text": "MSTR is criminally undervalued, holding till 2027",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "my MSTR 0DTE calls just 4x'd lmao",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    }
-   ],
+   "name": "MicroStrategy",
+   "mentions": 23,
+   "unique_authors": null,
+   "upvotes": 211,
+   "cashtag_pct": null,
+   "prev_24h": 9,
+   "sentiment": null,
+   "samples": [],
    "price": {
-    "last": 647.0,
-    "chg_1d": 3.15,
-    "chg_5d": -2.34,
-    "asof": "2026-11-15"
+    "last": 111.62,
+    "chg_1d": -2.44,
+    "chg_5d": -13.43,
+    "asof": "2026-11-13"
    },
    "history": [
     {
-     "date": "2026-11-05",
-     "mentions": 22
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 33
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 31
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 41
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 39
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 33
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 27
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 27
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 24
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 30
-    },
-    {
      "date": "2026-11-15",
-     "mentions": 50
+     "mentions": 23
     }
    ],
-   "baseline": 31.6,
-   "ratio": 1.58
+   "baseline": null,
+   "ratio": null
   },
   {
-   "ticker": "SOFI",
-   "name": "SoFi Technologies",
-   "mentions": 45,
-   "unique_authors": 43,
-   "upvotes": 107,
-   "cashtag_pct": 16,
-   "sentiment": {
-    "bull": 26,
-    "bear": 12,
-    "neutral": 7,
-    "meme": 13,
-    "n": 45,
-    "score": 0.311
-   },
-   "samples": [
-    {
-     "text": "sold all my SOFI, chart looks like a cliff",
-     "score": 18,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "sold all my SOFI, chart looks like a cliff",
-     "score": 13,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "$SOFI calls printing, see you on the moon 🚀",
-     "score": 5,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "anyone holding SOFI through the split?",
-     "score": 5,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": true
-    },
-    {
-     "text": "SOFI puts are free money, this is overvalued garbage",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bear",
-     "meme": false
-    },
-    {
-     "text": "my SOFI 0DTE calls just 4x'd lmao",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    },
-    {
-     "text": "anyone holding SOFI through the split?",
-     "score": 4,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "neutral",
-     "meme": false
-    },
-    {
-     "text": "SOFI is criminally undervalued, holding till 2027",
-     "score": 3,
-     "url": "https://www.reddit.com/r/wallstreetbets/",
-     "sub": "wallstreetbets",
-     "label": "bull",
-     "meme": false
-    }
-   ],
+   "ticker": "QQQ",
+   "name": "Invesco QQQ ETF",
+   "mentions": 22,
+   "unique_authors": null,
+   "upvotes": 67,
+   "cashtag_pct": null,
+   "prev_24h": 39,
+   "sentiment": null,
+   "samples": [],
    "price": {
-    "last": 723.8,
-    "chg_1d": -6.1,
-    "chg_5d": 6.59,
-    "asof": "2026-11-15"
+    "last": 679.89,
+    "chg_1d": -1.2,
+    "chg_5d": 3.63,
+    "asof": "2026-11-13"
    },
    "history": [
     {
-     "date": "2026-11-05",
-     "mentions": 24
-    },
-    {
-     "date": "2026-11-06",
-     "mentions": 19
-    },
-    {
-     "date": "2026-11-07",
-     "mentions": 24
-    },
-    {
-     "date": "2026-11-08",
-     "mentions": 26
-    },
-    {
-     "date": "2026-11-09",
-     "mentions": 24
-    },
-    {
-     "date": "2026-11-10",
-     "mentions": 28
-    },
-    {
-     "date": "2026-11-11",
-     "mentions": 37
-    },
-    {
-     "date": "2026-11-12",
-     "mentions": 19
-    },
-    {
-     "date": "2026-11-13",
-     "mentions": 21
-    },
-    {
-     "date": "2026-11-14",
-     "mentions": 20
-    },
-    {
      "date": "2026-11-15",
-     "mentions": 45
+     "mentions": 22
     }
    ],
-   "baseline": 25.0,
-   "ratio": 1.8
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "HR",
+   "name": "Healthcare Realty",
+   "mentions": 18,
+   "unique_authors": null,
+   "upvotes": 70,
+   "cashtag_pct": null,
+   "prev_24h": 34,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 19.32,
+    "chg_1d": 0.84,
+    "chg_5d": 1.89,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 18
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "NYT",
+   "name": "New York Times",
+   "mentions": 18,
+   "unique_authors": null,
+   "upvotes": 211,
+   "cashtag_pct": null,
+   "prev_24h": 24,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 72.81,
+    "chg_1d": 1.89,
+    "chg_5d": 6.51,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 18
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "CIA",
+   "name": "Citizens Inc",
+   "mentions": 16,
+   "unique_authors": null,
+   "upvotes": 2964,
+   "cashtag_pct": null,
+   "prev_24h": 21,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 3.26,
+    "chg_1d": -11.17,
+    "chg_5d": -21.07,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 16
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "ASTS",
+   "name": "AST SpaceMobile",
+   "mentions": 16,
+   "unique_authors": null,
+   "upvotes": 45,
+   "cashtag_pct": null,
+   "prev_24h": 16,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 32.6,
+    "chg_1d": -5.51,
+    "chg_5d": 0.84,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 16
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "ASML",
+   "name": "ASML",
+   "mentions": 14,
+   "unique_authors": null,
+   "upvotes": 78,
+   "cashtag_pct": null,
+   "prev_24h": 1,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 1495.16,
+    "chg_1d": -0.13,
+    "chg_5d": 4.94,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 14
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "VC",
+   "name": "Visteon",
+   "mentions": 14,
+   "unique_authors": null,
+   "upvotes": 138,
+   "cashtag_pct": null,
+   "prev_24h": 7,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 82.27,
+    "chg_1d": 3.99,
+    "chg_5d": 8.71,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 14
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "DC",
+   "name": "Dakota Gold",
+   "mentions": 13,
+   "unique_authors": null,
+   "upvotes": 2858,
+   "cashtag_pct": null,
+   "prev_24h": 14,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 5.33,
+    "chg_1d": -2.38,
+    "chg_5d": -10.42,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 13
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "NBIS",
+   "name": "Nebius Group",
+   "mentions": 13,
+   "unique_authors": null,
+   "upvotes": 32,
+   "cashtag_pct": null,
+   "prev_24h": 25,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 115.88,
+    "chg_1d": -9.92,
+    "chg_5d": -10.51,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 13
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "GOOG",
+   "name": "Alphabet (Google)",
+   "mentions": 12,
+   "unique_authors": null,
+   "upvotes": 35,
+   "cashtag_pct": null,
+   "prev_24h": 9,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 292.52,
+    "chg_1d": -0.96,
+    "chg_5d": 3.03,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 12
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "MU",
+   "name": "Micron Technology",
+   "mentions": 12,
+   "unique_authors": null,
+   "upvotes": 109,
+   "cashtag_pct": null,
+   "prev_24h": 19,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 778.31,
+    "chg_1d": -2.52,
+    "chg_5d": 12.8,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 12
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "PR",
+   "name": "Permian Resources",
+   "mentions": 12,
+   "unique_authors": null,
+   "upvotes": 144,
+   "cashtag_pct": null,
+   "prev_24h": 17,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 23.05,
+    "chg_1d": 1.23,
+    "chg_5d": 5.98,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 12
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "IT",
+   "name": "Gartner",
+   "mentions": 11,
+   "unique_authors": null,
+   "upvotes": 3600,
+   "cashtag_pct": null,
+   "prev_24h": 34,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 192.15,
+    "chg_1d": 0.69,
+    "chg_5d": 1.08,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 11
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "RTX",
+   "name": "Raytheon Technologies",
+   "mentions": 11,
+   "unique_authors": null,
+   "upvotes": 189,
+   "cashtag_pct": null,
+   "prev_24h": 8,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 198.58,
+    "chg_1d": 0.11,
+    "chg_5d": 4.77,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 11
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "RKLB",
+   "name": "Rocket Lab USA",
+   "mentions": 11,
+   "unique_authors": null,
+   "upvotes": 62,
+   "cashtag_pct": null,
+   "prev_24h": 1,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 61.53,
+    "chg_1d": -3.96,
+    "chg_5d": 15.94,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 11
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "SNDK",
+   "name": "Sandisk",
+   "mentions": 11,
+   "unique_authors": null,
+   "upvotes": 32,
+   "cashtag_pct": null,
+   "prev_24h": 15,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 885.01,
+    "chg_1d": -5.59,
+    "chg_5d": 5.98,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 11
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "YOU",
+   "name": "CLEAR Secure",
+   "mentions": 10,
+   "unique_authors": null,
+   "upvotes": 22,
+   "cashtag_pct": null,
+   "prev_24h": 11,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 57.21,
+    "chg_1d": 0.74,
+    "chg_5d": 2.51,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 10
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "MSFT",
+   "name": "Microsoft",
+   "mentions": 9,
+   "unique_authors": null,
+   "upvotes": 11,
+   "cashtag_pct": null,
+   "prev_24h": 27,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 523.88,
+    "chg_1d": 0.17,
+    "chg_5d": -1.27,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 9
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "OG",
+   "name": "Onion Global",
+   "mentions": 9,
+   "unique_authors": null,
+   "upvotes": 20,
+   "cashtag_pct": null,
+   "prev_24h": 5,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 9
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "DTE",
+   "name": "DTE Energy",
+   "mentions": 8,
+   "unique_authors": null,
+   "upvotes": 17,
+   "cashtag_pct": null,
+   "prev_24h": 9,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 139.72,
+    "chg_1d": 0.37,
+    "chg_5d": 3.44,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 8
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "ET",
+   "name": "Energy Transfer Partners",
+   "mentions": 8,
+   "unique_authors": null,
+   "upvotes": 14,
+   "cashtag_pct": null,
+   "prev_24h": 7,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 19.4,
+    "chg_1d": -0.1,
+    "chg_5d": 2.54,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 8
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "GME",
+   "name": "GameStop",
+   "mentions": 8,
+   "unique_authors": null,
+   "upvotes": 30,
+   "cashtag_pct": null,
+   "prev_24h": 8,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 8
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "EU",
+   "name": "enCore Energy",
+   "mentions": 8,
+   "unique_authors": null,
+   "upvotes": 93,
+   "cashtag_pct": null,
+   "prev_24h": 9,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 0.55,
+    "chg_1d": 1.85,
+    "chg_5d": -12.7,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 8
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "TSLA",
+   "name": "Tesla",
+   "mentions": 7,
+   "unique_authors": null,
+   "upvotes": 28,
+   "cashtag_pct": null,
+   "prev_24h": 16,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 390.22,
+    "chg_1d": -1.82,
+    "chg_5d": 8.93,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "mentions": 7,
+   "unique_authors": null,
+   "upvotes": 7,
+   "cashtag_pct": null,
+   "prev_24h": 6,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 347.01,
+    "chg_1d": -4.76,
+    "chg_5d": 18.16,
+    "asof": "2026-11-13"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "ALL",
+   "name": "Allstate",
+   "mentions": 7,
+   "unique_authors": null,
+   "upvotes": 3535,
+   "cashtag_pct": null,
+   "prev_24h": 13,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "IP",
+   "name": "International Paper",
+   "mentions": 7,
+   "unique_authors": null,
+   "upvotes": 21,
+   "cashtag_pct": null,
+   "prev_24h": 7,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "RSG",
+   "name": "Republic Services",
+   "mentions": 7,
+   "unique_authors": null,
+   "upvotes": 267,
+   "cashtag_pct": null,
+   "prev_24h": 1,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "AM",
+   "name": "Antero Midstream",
+   "mentions": 7,
+   "unique_authors": null,
+   "upvotes": 8,
+   "cashtag_pct": null,
+   "prev_24h": 6,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "LINK",
+   "name": "Interlink Electronics",
+   "mentions": 7,
+   "unique_authors": null,
+   "upvotes": 8,
+   "cashtag_pct": null,
+   "prev_24h": 7,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "CRWV",
+   "name": "CoreWeave",
+   "mentions": 7,
+   "unique_authors": null,
+   "upvotes": 12,
+   "cashtag_pct": null,
+   "prev_24h": 6,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "MAGA",
+   "name": "ETF Series Solutions Trust - Point Bridge GOP Stock Tracker ETF",
+   "mentions": 6,
+   "unique_authors": null,
+   "upvotes": 994,
+   "cashtag_pct": null,
+   "prev_24h": 23,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 6
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "MSOS",
+   "name": "Advisorshares Trust - AdvisorShares Pure US Cannabis ETF",
+   "mentions": 6,
+   "unique_authors": null,
+   "upvotes": 190,
+   "cashtag_pct": null,
+   "prev_24h": 1,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 6
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "WMT",
+   "name": "Walmart",
+   "mentions": 5,
+   "unique_authors": null,
+   "upvotes": 42,
+   "cashtag_pct": null,
+   "prev_24h": 1,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 5
+    }
+   ],
+   "baseline": null,
+   "ratio": null
+  },
+  {
+   "ticker": "GE",
+   "name": "General Electric",
+   "mentions": 5,
+   "unique_authors": null,
+   "upvotes": 27,
+   "cashtag_pct": null,
+   "prev_24h": 1,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 5
+    }
+   ],
+   "baseline": null,
+   "ratio": null
   }
  ],
  "notes": [
-  "DATOS SIMULADOS: solo para probar el diseño."
+  "Reddit no respondió (HTTPError); se usaron conteos de ApeWisdom, sin sentimiento IA.",
+  "Histórico en construcción: la comparación contra el promedio aparece tras 2+ días de datos."
  ]
 }
