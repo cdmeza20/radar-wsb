@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar WSB · Sentimiento de Reddit con IA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#07090c;--panel:#0e1217;--panel2:#131820;--line:#1d2530;--line2:#283241;
+  --text:#e7edf4;--muted:#7b8796;--dim:#4d5866;
+  --bull:#1fd17a;--bear:#ff4d5e;--neu:#5b6676;--meme:#f5a524;--hot:#ff7a1a;--acc:#4da3ff;
+  --mono:'JetBrains Mono',ui-monospace,monospace;--sans:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 500px at 10% -10%,rgba(77,163,255,.07),transparent 60%),radial-gradient(900px 400px at 100% 0%,rgba(31,209,122,.05),transparent 60%)}
+.wrap{max-width:1380px;margin:0 auto;padding:22px 24px 40px}
+.mono{font-family:var(--mono)}
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#1fd17a,#4da3ff);display:grid;place-items:center;font:800 15px var(--mono);color:#05070a}
+.brand h1{font:800 20px var(--sans);letter-spacing:-.02em}
+.brand h1 span{color:var(--muted);font-weight:500}
+.brand p{color:var(--muted);font-size:12.5px;margin-top:2px}
+.status{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font:500 12px var(--mono);color:var(--muted)}
+.pill{border:1px solid var(--line2);background:var(--panel);padding:6px 10px;border-radius:999px;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--bull);box-shadow:0 0 0 0 rgba(31,209,122,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 7px rgba(31,209,122,0)}100%{box-shadow:0 0 0 0 rgba(31,209,122,0)}}
+.banner{border:1px solid;border-radius:10px;padding:10px 14px;margin-bottom:14px;font-size:13px}
+.banner.demo{border-color:rgba(245,165,36,.45);background:rgba(245,165,36,.08);color:#ffd28a}
+.banner.info{border-color:var(--line2);background:var(--panel);color:var(--muted)}
+/* kpis */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.kpi{padding:14px 16px}
+.kpi .lbl{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.kpi .val{font:700 26px var(--mono);margin-top:6px;letter-spacing:-.02em}
+.kpi .sub{color:var(--muted);font-size:12px;margin-top:3px}
+.thermo{height:8px;border-radius:99px;margin-top:12px;background:linear-gradient(90deg,var(--bear),#8a5a63 45%,#556 50%,#4f8a6c 55%,var(--bull));position:relative}
+.thermo i{position:absolute;top:-5px;width:4px;height:18px;border-radius:2px;background:#fff;box-shadow:0 0 10px rgba(255,255,255,.6);transform:translateX(-50%);transition:left .8s}
+.thermo-l{display:flex;justify-content:space-between;font:500 10px var(--mono);color:var(--dim);margin-top:6px}
+/* main */
+.main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:14px;align-items:start}
+.panel-h{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.panel-h h2{font:700 13px var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.tabs{display:flex;gap:4px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:3px}
+.tabs button{all:unset;cursor:pointer;font:500 11.5px var(--mono);color:var(--muted);padding:5px 9px;border-radius:6px}
+.tabs button.on{background:var(--panel2);color:var(--text);box-shadow:inset 0 0 0 1px var(--line2)}
+html,body{overflow-x:hidden}.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse}
+th{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--dim);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+th.r,td.r{text-align:right}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+tbody tr{cursor:pointer;transition:background .15s}
+tbody tr:hover{background:var(--panel2)}
+tbody tr.sel{background:linear-gradient(90deg,rgba(77,163,255,.12),transparent 70%);box-shadow:inset 3px 0 0 var(--acc)}
+.rank{font:500 12px var(--mono);color:var(--dim);width:28px}
+.tk{font:700 14px var(--mono)}
+.nm{color:var(--muted);font-size:11.5px;max-width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar{display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.mbar b{font:600 13px var(--mono);min-width:38px;text-align:right}
+.mbar span{display:block;height:6px;border-radius:3px;background:linear-gradient(90deg,#2b5b8a,var(--acc));min-width:2px}
+.ratio{font:600 12px var(--mono);padding:3px 7px;border-radius:6px;display:inline-block;min-width:54px;text-align:center}
+.ratio.hot{background:rgba(255,122,26,.15);color:var(--hot);box-shadow:inset 0 0 0 1px rgba(255,122,26,.35)}
+.ratio.up{color:#b7e4c7}.ratio.flat{color:var(--muted)}.ratio.down{color:#c0848b}
+.sbar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--line);width:120px}
+.sbar i{display:block;height:100%}
+.sline{display:flex;align-items:center;gap:8px}
+.sline em{font:600 12px var(--mono);font-style:normal;min-width:44px}
+.pos{color:var(--bull)}.neg{color:var(--bear)}.mut{color:var(--muted)}
+.meme{font:500 11px var(--mono);color:var(--meme)}
+/* detail */
+.detail{position:sticky;top:14px}
+.d-top{padding:18px 18px 12px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.d-top .tk{font-size:30px;letter-spacing:-.02em}
+.d-price{text-align:right}
+.d-price .p{font:700 18px var(--mono)}
+.d-price .c{font:600 13px var(--mono);margin-top:2px}
+.d-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.d-stats div{padding:11px 14px;border-right:1px solid var(--line)}
+.d-stats div:last-child{border-right:0}
+.d-stats .lbl{font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--dim)}
+.d-stats .v{font:700 17px var(--mono);margin-top:3px}
+.sect{padding:14px 18px;border-bottom:1px solid var(--line)}
+.sect h3{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px;display:flex;justify-content:space-between}
+.bigbar{display:flex;height:26px;border-radius:7px;overflow:hidden;font:700 11px var(--mono)}
+.bigbar i{display:flex;align-items:center;justify-content:center;font-style:normal;color:#04130b;min-width:0;overflow:hidden;white-space:nowrap}
+.legend{display:flex;gap:14px;margin-top:9px;font:500 11.5px var(--mono);color:var(--muted);flex-wrap:wrap}
+.legend span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;background:var(--c)}
+.chartbox{height:150px}
+.empty{color:var(--dim);font-size:12.5px;padding:8px 0}
+.cmt{padding:11px 12px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;background:var(--panel2)}
+.cmt p{font-size:13px;line-height:1.45;color:#cfd7e1;word-wrap:break-word}
+.cmt .meta{display:flex;align-items:center;gap:8px;margin-top:8px;font:500 11px var(--mono);color:var(--dim)}
+.tag{padding:2px 7px;border-radius:5px;font:700 10.5px var(--mono);text-transform:uppercase}
+.tag.bull{background:rgba(31,209,122,.14);color:var(--bull)}
+.tag.bear{background:rgba(255,77,94,.14);color:var(--bear)}
+.tag.neutral{background:rgba(123,135,150,.16);color:var(--muted)}
+.tag.memet{background:rgba(245,165,36,.14);color:var(--meme)}
+.cmt a{color:var(--acc);text-decoration:none;margin-left:auto}
+/* method */
+details{margin-top:14px}
+summary{cursor:pointer;padding:14px 16px;font:600 12.5px var(--mono);letter-spacing:.04em;color:var(--muted);list-style:none}
+summary::before{content:"▸ ";color:var(--acc)}
+details[open] summary::before{content:"▾ "}
+.method{padding:0 18px 16px;color:#b6c0cc;font-size:13px;line-height:1.6;display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}
+.method b{color:var(--text)}
+footer{margin-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--dim);font-size:12px}
+footer b{color:var(--muted)}
+.loading{padding:60px;text-align:center;color:var(--muted);font-family:var(--mono)}
+@media (max-width:1000px){.main{grid-template-columns:1fr}.detail{position:static}.kpis{grid-template-columns:repeat(2,1fr)}.method{grid-template-columns:1fr}.hide-m{display:none}.wrap{padding:16px 12px 30px}td,th{padding:9px 7px}.sbar{width:70px!important}.nm{max-width:110px}.main>*{min-width:0}.mbar span{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo">W$B</div>
+      <div>
+        <h1>RADAR WSB <span>/ sentimiento con IA</span></h1>
+        <p>Qué acciones están en boca de Reddit, y si el foro está eufórico o con miedo.</p>
+      </div>
+    </div>
+    <div class="status" id="status"></div>
+  </header>
+  <div id="banners"></div>
+  <div id="app"><div class="loading">Cargando datos…</div></div>
+
+  <details class="card">
+    <summary>CÓMO SE CALCULA (METODOLOGÍA Y LIMITACIONES)</summary>
+    <div class="method">
+      <div><b>Fuente.</b> Posts y comentarios de las últimas horas en los subreddits indicados arriba: posts nuevos, flujo de comentarios recientes y los hilos más activos (incluido el Daily Discussion). Es una muestra amplia, no la totalidad de Reddit.</div>
+      <div><b>Detección de tickers.</b> Se aceptan cashtags ($TSLA), nombres de empresa conocidos y símbolos en mayúsculas de 3–5 letras que existan en el listado oficial de la SEC. Se descartan palabras comunes que también son tickers (IT, ALL, DD, ON, AI…) y textos escritos casi todo en mayúsculas.</div>
+      <div><b>Anti-spam.</b> Cada texto cuenta una vez por ticker; un mismo usuario suma como máximo 3 menciones por ticker; para entrar al ranking hacen falta al menos 3 autores distintos.</div>
+      <div><b>Sentimiento.</b> Un modelo de IA (Claude) lee hasta 40 de los comentarios más votados de cada uno de los tickers principales y decide si el autor es alcista, bajista o neutral sobre ese ticker, y si es un meme. Puntaje = (alcistas − bajistas) / total.</div>
+      <div><b>Anomalía (vs promedio).</b> Menciones de hoy ÷ promedio diario de los 7 días anteriores. 🔥 cuando es ≥ 2× con al menos 10 menciones. Requiere 2+ días de histórico.</div>
+      <div><b>Limitaciones.</b> La IA puede malinterpretar ironía extrema; la muestra no es todo Reddit; que un ticker sea muy mencionado <b>no</b> implica que vaya a subir o bajar. Esto es una herramienta educativa, <b>no una recomendación de inversión</b>.</div>
+    </div>
+  </details>
+
+  <footer>
+    <span>Proyecto educativo · <b>@finanzas4dummies</b></span>
+    <span>No es asesoría financiera. Datos de Reddit y Yahoo Finance pueden tener retrasos o errores.</span>
+  </footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const fmt = n => n == null ? '—' : n.toLocaleString('es');
+const pct = (n, d = 1) => n == null ? '—' : (n > 0 ? '+' : '') + n.toFixed(d) + '%';
+const esc = s => (s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let DATA, SORT = 'mentions', SEL = null, chart;
+
+function ago(iso){
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if (m < 1) return 'hace instantes';
+  if (m < 60) return `hace ${m} min`;
+  const h = Math.round(m / 60);
+  return h < 48 ? `hace ${h} h` : `hace ${Math.round(h / 24)} días`;
+}
+function ratioCls(r){ return r == null ? 'flat' : r >= 2 ? 'hot' : r >= 1.15 ? 'up' : r <= 0.85 ? 'down' : 'flat'; }
+function ratioTxt(t){
+  if (t.ratio != null) return (t.ratio >= 2 && t.mentions >= 10 ? '🔥 ' : '') + t.ratio.toFixed(1) + '×';
+  if (t.prev_24h) { const r = t.mentions / Math.max(t.prev_24h, 1); return r.toFixed(1) + '×'; }
+  return '—';
+}
+function ratioVal(t){ return t.ratio != null ? t.ratio : t.prev_24h ? t.mentions / Math.max(t.prev_24h, 1) : null; }
+function sentBar(s, w = 120){
+  if (!s) return `<span class="mut mono" style="font-size:12px">sin IA</span>`;
+  const n = s.n, b = 100 * s.bull / n, r = 100 * s.bear / n, u = 100 - b - r;
+  const cls = s.score > .15 ? 'pos' : s.score < -.15 ? 'neg' : 'mut';
+  return `<div class="sline"><div class="sbar" style="width:${w}px"><i style="width:${b}%;background:var(--bull)"></i><i style="width:${u}%;background:var(--neu)"></i><i style="width:${r}%;background:var(--bear)"></i></div><em class="${cls}">${s.score > 0 ? '+' : ''}${Math.round(s.score * 100)}</em></div>`;
+}
+
+async function load(){
+  try {
+    const r = await fetch('data/latest.json?t=' + Date.now());
+    DATA = await r.json();
+  } catch (e) {
+    $('#app').innerHTML = '<div class="loading">No se pudieron cargar los datos. ¿Ya corrió el robot al menos una vez?</div>';
+    return;
+  }
+  render();
+}
+
+function render(){
+  const D = DATA, T = D.tickers;
+  const srcName = {'reddit-oauth':'Reddit API','reddit-public':'Reddit','apewisdom':'ApeWisdom','demo':'DEMO'}[D.source] || D.source;
+  $('#status').innerHTML = `
+    <span class="pill"><span class="dot"></span>Actualizado ${ago(D.generated_at)}</span>
+    <span class="pill">${new Date(D.generated_at).toLocaleString('es', {dateStyle:'medium', timeStyle:'short'})}</span>
+    <span class="pill">Fuente: ${srcName} · r/${D.subreddits.join(', r/')}</span>`;
+  $('#banners').innerHTML = D.notes.map(n => `<div class="banner ${D.source === 'demo' ? 'demo' : 'info'}">${D.source === 'demo' ? '⚠️ ' : 'ℹ️ '}${esc(n)}</div>`).join('');
+
+  const g = D.global_sentiment;
+  const gpos = g ? 50 + g.score * 50 : 50;
+  const mood = !g ? 'Sin datos de IA' : g.score > .35 ? 'Euforia' : g.score > .1 ? 'Optimismo' : g.score < -.35 ? 'Pánico' : g.score < -.1 ? 'Miedo' : 'Neutral';
+  const hot = T.filter(t => (ratioVal(t) || 0) >= 2 && t.mentions >= 10).length;
+
+  $('#app').innerHTML = `
+  <section class="kpis">
+    <div class="card kpi"><div class="lbl">Textos analizados</div><div class="val">${fmt(D.stats.texts || T.reduce((a, t) => a + t.mentions, 0))}</div><div class="sub">${D.stats.texts ? `${fmt(D.stats.texts_with_tickers)} mencionan alguna acción · ${fmt(D.stats.authors)} autores` : 'menciones totales (ApeWisdom)'}</div></div>
+    <div class="card kpi"><div class="lbl">Acciones en el radar</div><div class="val">${T.length}</div><div class="sub">${hot ? `🔥 ${hot} con menciones anómalas` : 'ninguna anomalía fuerte hoy'}</div></div>
+    <div class="card kpi"><div class="lbl">Leídos por la IA</div><div class="val">${D.ai.enabled ? fmt(D.ai.classified) : '—'}</div><div class="sub">${D.ai.enabled ? `modelo: ${esc(D.ai.model)} · top ${D.ai.top_n} acciones` : 'sentimiento IA desactivado'}</div></div>
+    <div class="card kpi"><div class="lbl">Termómetro del foro</div><div class="val ${g ? (g.score > .1 ? 'pos' : g.score < -.1 ? 'neg' : '') : 'mut'}">${mood}${g ? ` <span style="font-size:15px" class="mut">${g.score > 0 ? '+' : ''}${Math.round(g.score * 100)}</span>` : ''}</div>
+      <div class="thermo"><i style="left:${gpos}%"></i></div><div class="thermo-l"><span>PÁNICO</span><span>NEUTRAL</span><span>EUFORIA</span></div></div>
+  </section>
+  <section class="main">
+    <div class="card">
+      <div class="panel-h"><h2>Ranking de menciones · ${D.window_hours} h</h2>
+        <div class="tabs" id="tabs">
+          <button data-s="mentions">Más mencionadas</button><button data-s="ratio">🔥 Anomalía</button>
+          <button data-s="bull">Más alcistas</button><button data-s="bear">Más bajistas</button>
+        </div></div>
+      <div class="tblwrap"><table><thead><tr><th>#</th><th>Acción</th><th class="r">Menciones</th><th class="r">vs promedio</th><th class="hide-m r">Autores</th><th>Sentimiento IA</th><th class="r hide-m">Precio 1d</th></tr></thead>
+      <tbody id="rows"></tbody></table></div>
+    </div>
+    <div class="card detail" id="detail"></div>
+  </section>`;
+  document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => { SORT = b.dataset.s; drawRows(); });
+  if (!SEL || !T.find(t => t.ticker === SEL)) SEL = T[0] && T[0].ticker;
+  drawRows(); drawDetail();
+}
+
+function sorted(){
+  const T = [...DATA.tickers];
+  const sc = t => t.sentiment ? t.sentiment.score : null;
+  if (SORT === 'ratio') T.sort((a, b) => (ratioVal(b) ?? -1) - (ratioVal(a) ?? -1));
+  else if (SORT === 'bull') T.sort((a, b) => (sc(b) ?? -9) - (sc(a) ?? -9));
+  else if (SORT === 'bear') T.sort((a, b) => (sc(a) ?? 9) - (sc(b) ?? 9));
+  return T;
+}
+
+function drawRows(){
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.s === SORT));
+  const max = Math.max(...DATA.tickers.map(t => t.mentions));
+  $('#rows').innerHTML = sorted().map((t, i) => {
+    const p = t.price;
+    const meme = t.sentiment && t.sentiment.n ? Math.round(100 * t.sentiment.meme / t.sentiment.n) : null;
+    return `<tr data-t="${t.ticker}" class="${t.ticker === SEL ? 'sel' : ''}">
+      <td class="rank">${i + 1}</td>
+      <td><div class="tk">${t.ticker}</div><div class="nm">${esc(t.name)}</div></td>
+      <td class="r"><div class="mbar"><span style="width:${Math.max(2, 70 * t.mentions / max)}px"></span><b>${fmt(t.mentions)}</b></div></td>
+      <td class="r"><span class="ratio ${ratioCls(ratioVal(t))}">${ratioTxt(t)}</span></td>
+      <td class="r mono hide-m mut">${fmt(t.unique_authors)}</td>
+      <td>${sentBar(t.sentiment)}${meme != null ? `<div class="meme">🤡 ${meme}% meme</div>` : ''}</td>
+      <td class="r mono hide-m ${p ? (p.chg_1d >= 0 ? 'pos' : 'neg') : 'mut'}">${p ? pct(p.chg_1d) : '—'}</td></tr>`;
+  }).join('');
+  document.querySelectorAll('#rows tr').forEach(r => r.onclick = () => { SEL = r.dataset.t; drawRows(); drawDetail(); });
+}
+
+function drawDetail(){
+  const t = DATA.tickers.find(x => x.ticker === SEL);
+  if (!t) { $('#detail').innerHTML = ''; return; }
+  const s = t.sentiment, p = t.price;
+  const share = s ? [['bull', s.bull, 'Alcista', 'var(--bull)'], ['neutral', s.neutral, 'Neutral', 'var(--neu)'], ['bear', s.bear, 'Bajista', 'var(--bear)']] : [];
+  $('#detail').innerHTML = `
+    <div class="d-top"><div><div class="tk">$${t.ticker}</div><div class="nm" style="max-width:260px">${esc(t.name)}</div></div>
+      <div class="d-price">${p ? `<div class="p">$${p.last.toLocaleString('es', {minimumFractionDigits:2})}</div>
+      <div class="c ${p.chg_1d >= 0 ? 'pos' : 'neg'}">${pct(p.chg_1d)} hoy</div><div class="c ${p.chg_5d >= 0 ? 'pos' : 'neg'}" style="font-size:11.5px">${pct(p.chg_5d)} 5 días</div>` : '<div class="mut mono">sin precio</div>'}</div></div>
+    <div class="d-stats">
+      <div><div class="lbl">Menciones</div><div class="v">${fmt(t.mentions)}</div></div>
+      <div><div class="lbl">vs promedio</div><div class="v ${ratioCls(ratioVal(t)) === 'hot' ? '' : ''}" style="color:${(ratioVal(t) || 0) >= 2 ? 'var(--hot)' : 'inherit'}">${ratioTxt(t)}</div></div>
+      <div><div class="lbl">${t.unique_authors != null ? 'Autores únicos' : 'Upvotes'}</div><div class="v">${fmt(t.unique_authors ?? t.upvotes)}</div></div>
+    </div>
+    <div class="sect"><h3><span>Sentimiento según la IA</span><span>${s ? `${s.n} comentarios leídos` : ''}</span></h3>
+      ${s ? `<div class="bigbar">${share.map(([k, v, l, c]) => `<i style="width:${100 * v / s.n}%;background:${c};${k !== 'bull' ? 'color:#fff' : ''}">${v / s.n > .12 ? Math.round(100 * v / s.n) + '%' : ''}</i>`).join('')}</div>
+      <div class="legend">${share.map(([k, v, l, c]) => `<span style="--c:${c}">${l} ${v}</span>`).join('')}<span style="--c:var(--meme)">Meme ${Math.round(100 * s.meme / s.n)}%</span></div>`
+      : `<div class="empty">${DATA.ai.enabled ? 'Fuera del top analizado por la IA.' : 'Activa la API key de Claude para ver el sentimiento.'}</div>`}
+    </div>
+    <div class="sect"><h3><span>Menciones por día</span><span>${t.baseline != null ? `promedio 7d: ${t.baseline}` : ''}</span></h3>
+      ${t.history && t.history.length >= 2 ? '<div class="chartbox"><canvas id="hc"></canvas></div>' : '<div class="empty">El gráfico aparece cuando haya 2+ días de histórico.</div>'}
+    </div>
+    <div class="sect" style="border-bottom:0"><h3><span>Lo que dice el foro</span><span>más votados</span></h3>
+      ${t.samples && t.samples.length ? t.samples.slice(0, 5).map(c => `<div class="cmt"><p>${esc(c.text)}</p>
+        <div class="meta">${c.label ? `<span class="tag ${c.label}">${{bull:'alcista', bear:'bajista', neutral:'neutral'}[c.label]}</span>` : ''}${c.meme ? '<span class="tag memet">meme</span>' : ''}
+        <span>▲ ${fmt(c.score)} · r/${esc(c.sub)}</span>${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">ver ↗</a>` : ''}</div></div>`).join('')
+      : '<div class="empty">Sin comentarios de ejemplo para esta fuente.</div>'}
+    </div>`;
+  if (chart) chart.destroy();
+  const cv = document.getElementById('hc');
+  if (cv) {
+    const H = t.history;
+    chart = new Chart(cv, {type:'bar', data:{labels:H.map(h => h.date.slice(5)), datasets:[{data:H.map(h => h.mentions),
+      backgroundColor:H.map((h, i) => i === H.length - 1 ? '#4da3ff' : '#253244'), borderRadius:4, maxBarThickness:22}]},
+      options:{maintainAspectRatio:false, plugins:{legend:{display:false}, tooltip:{callbacks:{label:c => c.raw + ' menciones'}}},
+      scales:{x:{grid:{display:false}, ticks:{color:'#4d5866', font:{family:'JetBrains Mono', size:10}}},
+              y:{grid:{color:'#161d26'}, ticks:{color:'#4d5866', font:{family:'JetBrains Mono', size:10}}, beginAtZero:true}}}});
+  }
+}
+
+load();
+setInterval(load, 10 * 60 * 1000); // si dejas la página abierta, se refresca sola cada 10 min
+</script>
+</body>
+</html>
