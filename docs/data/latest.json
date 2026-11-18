@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T11:40:58+00:00",
+ "generated_at": "2026-11-18T20:30:38+00:00",
  "source": "apewisdom",
  "subreddits": [
   "wallstreetbets"
@@ -23,18 +23,18 @@
   {
    "ticker": "NVDA",
    "name": "NVIDIA",
-   "mentions": 2055,
+   "mentions": 1936,
    "unique_authors": null,
-   "upvotes": 7593,
+   "upvotes": 7280,
    "cashtag_pct": null,
-   "prev_24h": 1146,
+   "prev_24h": 1258,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 155.46,
-    "chg_1d": -0.44,
-    "chg_5d": -7.95,
-    "asof": "2026-11-17"
+    "last": 150.54,
+    "chg_1d": -3.16,
+    "chg_5d": -13.35,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -51,64 +51,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 2055
+     "mentions": 1936
     }
    ],
    "baseline": 805.7,
-   "ratio": 2.55
-  },
-  {
-   "ticker": "SLS",
-   "name": "Sellas Life Sciences",
-   "mentions": 392,
-   "unique_authors": null,
-   "upvotes": 1989,
-   "cashtag_pct": null,
-   "prev_24h": 8,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 19.15,
-    "chg_1d": 156.36,
-    "chg_5d": 128.79,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 320
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 392
-    }
-   ],
-   "baseline": 106.7,
-   "ratio": 3.67
+   "ratio": 2.4
   },
   {
    "ticker": "SPY",
    "name": "SPDR S&amp;P 500 ETF Trust",
-   "mentions": 318,
+   "mentions": 288,
    "unique_authors": null,
-   "upvotes": 775,
+   "upvotes": 829,
    "cashtag_pct": null,
-   "prev_24h": 318,
+   "prev_24h": 360,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 732.44,
-    "chg_1d": -1.01,
-    "chg_5d": -2.33,
-    "asof": "2026-11-17"
+    "last": 729.77,
+    "chg_1d": -0.36,
+    "chg_5d": -3.95,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -125,27 +88,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 318
+     "mentions": 288
     }
    ],
    "baseline": 193.3,
-   "ratio": 1.64
+   "ratio": 1.49
   },
   {
    "ticker": "QQQ",
    "name": "Invesco QQQ ETF",
-   "mentions": 185,
+   "mentions": 170,
    "unique_authors": null,
-   "upvotes": 487,
+   "upvotes": 675,
    "cashtag_pct": null,
-   "prev_24h": 183,
+   "prev_24h": 188,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 656.95,
-    "chg_1d": -0.73,
-    "chg_5d": -2.64,
-    "asof": "2026-11-17"
+    "last": 657.73,
+    "chg_1d": 0.12,
+    "chg_5d": -4.73,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -162,64 +125,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 185
+     "mentions": 170
     }
    ],
    "baseline": 116.3,
-   "ratio": 1.59
-  },
-  {
-   "ticker": "MU",
-   "name": "Micron Technology",
-   "mentions": 148,
-   "unique_authors": null,
-   "upvotes": 359,
-   "cashtag_pct": null,
-   "prev_24h": 113,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 712.42,
-    "chg_1d": -0.92,
-    "chg_5d": -1.75,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 12
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 88
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 144
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 148
-    }
-   ],
-   "baseline": 81.3,
-   "ratio": 1.82
+   "ratio": 1.46
   },
   {
    "ticker": "AMD",
    "name": "AMD",
-   "mentions": 133,
+   "mentions": 169,
    "unique_authors": null,
-   "upvotes": 663,
+   "upvotes": 769,
    "cashtag_pct": null,
-   "prev_24h": 96,
+   "prev_24h": 76,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 503.41,
-    "chg_1d": -0.17,
-    "chg_5d": -2.29,
-    "asof": "2026-11-17"
+    "last": 522.28,
+    "chg_1d": 3.75,
+    "chg_5d": -5.54,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -236,27 +162,64 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 133
+     "mentions": 169
     }
    ],
    "baseline": 67.7,
-   "ratio": 1.97
+   "ratio": 2.5
+  },
+  {
+   "ticker": "MU",
+   "name": "Micron Technology",
+   "mentions": 120,
+   "unique_authors": null,
+   "upvotes": 288,
+   "cashtag_pct": null,
+   "prev_24h": 146,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 696.23,
+    "chg_1d": -2.27,
+    "chg_5d": -14.18,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 12
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 88
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 144
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 120
+    }
+   ],
+   "baseline": 81.3,
+   "ratio": 1.48
   },
   {
    "ticker": "NBIS",
    "name": "Nebius Group",
-   "mentions": 95,
+   "mentions": 106,
    "unique_authors": null,
-   "upvotes": 186,
+   "upvotes": 202,
    "cashtag_pct": null,
-   "prev_24h": 83,
+   "prev_24h": 56,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 106.04,
-    "chg_1d": -1.02,
-    "chg_5d": -20.87,
-    "asof": "2026-11-17"
+    "last": 106.71,
+    "chg_1d": 0.64,
+    "chg_5d": -31.02,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -273,64 +236,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 95
+     "mentions": 106
     }
    ],
    "baseline": 52.3,
-   "ratio": 1.82
-  },
-  {
-   "ticker": "ET",
-   "name": "Energy Transfer Partners",
-   "mentions": 79,
-   "unique_authors": null,
-   "upvotes": 111,
-   "cashtag_pct": null,
-   "prev_24h": 45,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 19.16,
-    "chg_1d": 0.1,
-    "chg_5d": -1.39,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 8
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 35
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 53
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 79
-    }
-   ],
-   "baseline": 32.0,
-   "ratio": 2.47
+   "ratio": 2.03
   },
   {
    "ticker": "SPCX",
    "name": "SpaceX",
-   "mentions": 72,
+   "mentions": 79,
    "unique_authors": null,
-   "upvotes": 235,
+   "upvotes": 322,
    "cashtag_pct": null,
-   "prev_24h": 59,
+   "prev_24h": 68,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 141.7,
-    "chg_1d": 3.16,
-    "chg_5d": -0.97,
-    "asof": "2026-11-17"
+    "last": 143.42,
+    "chg_1d": 1.22,
+    "chg_5d": 2.63,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -347,27 +273,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 72
+     "mentions": 79
     }
    ],
    "baseline": 53.0,
-   "ratio": 1.36
+   "ratio": 1.49
   },
   {
    "ticker": "GP",
    "name": "GreenPower Motor Company",
-   "mentions": 68,
+   "mentions": 74,
    "unique_authors": null,
-   "upvotes": 301,
+   "upvotes": 320,
    "cashtag_pct": null,
    "prev_24h": 1,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 2.62,
-    "chg_1d": 85.82,
-    "chg_5d": 478.37,
-    "asof": "2026-11-17"
+    "last": 2.6,
+    "chg_1d": -0.76,
+    "chg_5d": 480.36,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -384,64 +310,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 68
+     "mentions": 74
     }
    ],
    "baseline": 0.0,
-   "ratio": 68.0
-  },
-  {
-   "ticker": "IT",
-   "name": "Gartner",
-   "mentions": 58,
-   "unique_authors": null,
-   "upvotes": 553,
-   "cashtag_pct": null,
-   "prev_24h": 59,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 183.47,
-    "chg_1d": -2.16,
-    "chg_5d": -2.88,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 11
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 31
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 60
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 58
-    }
-   ],
-   "baseline": 34.0,
-   "ratio": 1.71
+   "ratio": 74.0
   },
   {
    "ticker": "GOOG",
    "name": "Alphabet (Google)",
-   "mentions": 51,
+   "mentions": 58,
    "unique_authors": null,
-   "upvotes": 116,
+   "upvotes": 202,
    "cashtag_pct": null,
-   "prev_24h": 59,
+   "prev_24h": 43,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 277.6,
-    "chg_1d": -1.3,
-    "chg_5d": -2.57,
-    "asof": "2026-11-17"
+    "last": 280.42,
+    "chg_1d": 1.02,
+    "chg_5d": -3.51,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -458,101 +347,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 51
+     "mentions": 58
     }
    ],
    "baseline": 35.3,
-   "ratio": 1.44
+   "ratio": 1.64
   },
   {
-   "ticker": "DTE",
-   "name": "DTE Energy",
-   "mentions": 47,
+   "ticker": "AMZN",
+   "name": "Amazon",
+   "mentions": 55,
    "unique_authors": null,
-   "upvotes": 108,
+   "upvotes": 97,
    "cashtag_pct": null,
-   "prev_24h": 47,
+   "prev_24h": 11,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 136.41,
-    "chg_1d": -2.5,
-    "chg_5d": -1.86,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 8
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 36
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 43
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 47
-    }
-   ],
-   "baseline": 29.0,
-   "ratio": 1.62
-  },
-  {
-   "ticker": "AM",
-   "name": "Antero Midstream",
-   "mentions": 39,
-   "unique_authors": null,
-   "upvotes": 61,
-   "cashtag_pct": null,
-   "prev_24h": 23,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 20.26,
-    "chg_1d": -0.69,
-    "chg_5d": 2.43,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 7
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 18
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 32
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 39
-    }
-   ],
-   "baseline": 19.0,
-   "ratio": 2.05
-  },
-  {
-   "ticker": "SOXL",
-   "name": "Direxion Shares ETF Trust - Direxion Daily Semiconductor Bull 3X Share",
-   "mentions": 37,
-   "unique_authors": null,
-   "upvotes": 56,
-   "cashtag_pct": null,
-   "prev_24h": 36,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 49.07,
-    "chg_1d": 0.64,
-    "chg_5d": -12.47,
-    "asof": "2026-11-17"
+    "last": 266.13,
+    "chg_1d": 3.2,
+    "chg_5d": -0.02,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -561,146 +376,35 @@
     },
     {
      "date": "2026-11-16",
-     "mentions": 29
+     "mentions": 17
     },
     {
      "date": "2026-11-17",
-     "mentions": 30
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 37
-    }
-   ],
-   "baseline": 19.7,
-   "ratio": 1.88
-  },
-  {
-   "ticker": "SNDK",
-   "name": "Sandisk",
-   "mentions": 37,
-   "unique_authors": null,
-   "upvotes": 81,
-   "cashtag_pct": null,
-   "prev_24h": 71,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 797.24,
-    "chg_1d": -1.47,
-    "chg_5d": -7.3,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 11
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 51
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 70
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 37
-    }
-   ],
-   "baseline": 44.0,
-   "ratio": 0.84
-  },
-  {
-   "ticker": "AAPL",
-   "name": "Apple",
-   "mentions": 33,
-   "unique_authors": null,
-   "upvotes": 106,
-   "cashtag_pct": null,
-   "prev_24h": 40,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 351.91,
-    "chg_1d": -0.25,
-    "chg_5d": 1.05,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
      "mentions": 0
     },
     {
-     "date": "2026-11-16",
-     "mentions": 32
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 34
-    },
-    {
      "date": "2026-11-18",
-     "mentions": 33
+     "mentions": 55
     }
    ],
-   "baseline": 22.0,
-   "ratio": 1.5
-  },
-  {
-   "ticker": "ASTS",
-   "name": "AST SpaceMobile",
-   "mentions": 33,
-   "unique_authors": null,
-   "upvotes": 90,
-   "cashtag_pct": null,
-   "prev_24h": 92,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 27.59,
-    "chg_1d": -3.46,
-    "chg_5d": -18.11,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 16
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 53
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 90
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 33
-    }
-   ],
-   "baseline": 53.0,
-   "ratio": 0.62
+   "baseline": 5.7,
+   "ratio": 9.71
   },
   {
    "ticker": "GOOGL",
    "name": "Alphabet (Google)",
-   "mentions": 32,
+   "mentions": 55,
    "unique_authors": null,
-   "upvotes": 58,
+   "upvotes": 94,
    "cashtag_pct": null,
-   "prev_24h": 82,
+   "prev_24h": 39,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 280.2,
-    "chg_1d": -1.24,
-    "chg_5d": -2.5,
-    "asof": "2026-11-17"
+    "last": 283.16,
+    "chg_1d": 1.05,
+    "chg_5d": -3.51,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -717,138 +421,64 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 32
+     "mentions": 55
     }
    ],
    "baseline": 40.7,
-   "ratio": 0.79
+   "ratio": 1.35
   },
   {
-   "ticker": "CRWV",
-   "name": "CoreWeave",
-   "mentions": 31,
+   "ticker": "ET",
+   "name": "Energy Transfer Partners",
+   "mentions": 51,
    "unique_authors": null,
-   "upvotes": 51,
+   "upvotes": 132,
    "cashtag_pct": null,
-   "prev_24h": 20,
+   "prev_24h": 60,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 49.89,
-    "chg_1d": 0.02,
-    "chg_5d": 2.38,
-    "asof": "2026-11-17"
+    "last": 19.0,
+    "chg_1d": -0.84,
+    "chg_5d": -2.31,
+    "asof": "2026-11-18"
    },
    "history": [
     {
      "date": "2026-11-15",
-     "mentions": 7
+     "mentions": 8
     },
     {
      "date": "2026-11-16",
-     "mentions": 21
+     "mentions": 35
     },
     {
      "date": "2026-11-17",
-     "mentions": 18
+     "mentions": 53
     },
     {
      "date": "2026-11-18",
-     "mentions": 31
+     "mentions": 51
     }
    ],
-   "baseline": 15.3,
-   "ratio": 2.02
-  },
-  {
-   "ticker": "TSLA",
-   "name": "Tesla",
-   "mentions": 30,
-   "unique_authors": null,
-   "upvotes": 70,
-   "cashtag_pct": null,
-   "prev_24h": 23,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 380.11,
-    "chg_1d": 0.1,
-    "chg_5d": 0.09,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 7
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 24
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 24
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 30
-    }
-   ],
-   "baseline": 18.3,
-   "ratio": 1.64
-  },
-  {
-   "ticker": "NOW",
-   "name": "ServiceNow",
-   "mentions": 30,
-   "unique_authors": null,
-   "upvotes": 143,
-   "cashtag_pct": null,
-   "prev_24h": 12,
-   "sentiment": null,
-   "samples": [],
-   "price": {
-    "last": 92.9,
-    "chg_1d": -6.51,
-    "chg_5d": -6.74,
-    "asof": "2026-11-17"
-   },
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 21
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 30
-    }
-   ],
-   "baseline": 7.0,
-   "ratio": 4.29
+   "baseline": 32.0,
+   "ratio": 1.59
   },
   {
    "ticker": "TTWO",
    "name": "Take 2 Interactive",
-   "mentions": 30,
+   "mentions": 47,
    "unique_authors": null,
-   "upvotes": 50,
+   "upvotes": 91,
    "cashtag_pct": null,
-   "prev_24h": 21,
+   "prev_24h": 28,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 203.93,
-    "chg_1d": -4.47,
-    "chg_5d": -9.22,
-    "asof": "2026-11-17"
+    "last": 217.2,
+    "chg_1d": 6.5,
+    "chg_5d": -6.1,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -865,27 +495,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 30
+     "mentions": 47
     }
    ],
    "baseline": 14.7,
-   "ratio": 2.05
+   "ratio": 3.2
   },
   {
-   "ticker": "AAOI",
-   "name": "Applied Optoelectronics",
-   "mentions": 29,
+   "ticker": "UNH",
+   "name": "UnitedHealth",
+   "mentions": 43,
    "unique_authors": null,
-   "upvotes": 40,
+   "upvotes": 85,
    "cashtag_pct": null,
-   "prev_24h": 2,
+   "prev_24h": 6,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 45.22,
-    "chg_1d": 0.13,
-    "chg_5d": -6.42,
-    "asof": "2026-11-17"
+    "last": 348.38,
+    "chg_1d": -10.6,
+    "chg_5d": -13.54,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -902,27 +532,27 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 29
+     "mentions": 43
     }
    ],
    "baseline": 0.0,
-   "ratio": 29.0
+   "ratio": 43.0
   },
   {
-   "ticker": "RDDT",
-   "name": "Reddit",
-   "mentions": 28,
+   "ticker": "SLS",
+   "name": "Sellas Life Sciences",
+   "mentions": 43,
    "unique_authors": null,
-   "upvotes": 69,
+   "upvotes": 670,
    "cashtag_pct": null,
-   "prev_24h": 26,
+   "prev_24h": 360,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 94.48,
-    "chg_1d": 1.73,
-    "chg_5d": -4.25,
-    "asof": "2026-11-17"
+    "last": 18.73,
+    "chg_1d": -2.22,
+    "chg_5d": 122.39,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -931,35 +561,368 @@
     },
     {
      "date": "2026-11-16",
-     "mentions": 15
+     "mentions": 0
     },
     {
      "date": "2026-11-17",
-     "mentions": 27
+     "mentions": 320
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 43
+    }
+   ],
+   "baseline": 106.7,
+   "ratio": 0.4
+  },
+  {
+   "ticker": "SNDK",
+   "name": "Sandisk",
+   "mentions": 43,
+   "unique_authors": null,
+   "upvotes": 115,
+   "cashtag_pct": null,
+   "prev_24h": 68,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 768.71,
+    "chg_1d": -3.58,
+    "chg_5d": -21.37,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 11
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 51
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 70
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 43
+    }
+   ],
+   "baseline": 44.0,
+   "ratio": 0.98
+  },
+  {
+   "ticker": "DTE",
+   "name": "DTE Energy",
+   "mentions": 42,
+   "unique_authors": null,
+   "upvotes": 113,
+   "cashtag_pct": null,
+   "prev_24h": 46,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 137.13,
+    "chg_1d": 0.53,
+    "chg_5d": -1.83,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 8
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 36
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 43
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 42
+    }
+   ],
+   "baseline": 29.0,
+   "ratio": 1.45
+  },
+  {
+   "ticker": "IT",
+   "name": "Gartner",
+   "mentions": 37,
+   "unique_authors": null,
+   "upvotes": 1334,
+   "cashtag_pct": null,
+   "prev_24h": 83,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 180.04,
+    "chg_1d": -1.87,
+    "chg_5d": -6.71,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 11
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 31
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 60
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 37
+    }
+   ],
+   "baseline": 34.0,
+   "ratio": 1.09
+  },
+  {
+   "ticker": "SOXL",
+   "name": "Direxion Shares ETF Trust - Direxion Daily Semiconductor Bull 3X Share",
+   "mentions": 36,
+   "unique_authors": null,
+   "upvotes": 49,
+   "cashtag_pct": null,
+   "prev_24h": 26,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 48.06,
+    "chg_1d": -2.05,
+    "chg_5d": -27.21,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 29
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 30
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 36
+    }
+   ],
+   "baseline": 19.7,
+   "ratio": 1.83
+  },
+  {
+   "ticker": "CRWV",
+   "name": "CoreWeave",
+   "mentions": 32,
+   "unique_authors": null,
+   "upvotes": 69,
+   "cashtag_pct": null,
+   "prev_24h": 20,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 47.54,
+    "chg_1d": -4.71,
+    "chg_5d": -21.77,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 21
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 18
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 32
+    }
+   ],
+   "baseline": 15.3,
+   "ratio": 2.09
+  },
+  {
+   "ticker": "ASTS",
+   "name": "AST SpaceMobile",
+   "mentions": 31,
+   "unique_authors": null,
+   "upvotes": 72,
+   "cashtag_pct": null,
+   "prev_24h": 74,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 25.31,
+    "chg_1d": -8.26,
+    "chg_5d": -30.88,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 16
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 53
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 90
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 31
+    }
+   ],
+   "baseline": 53.0,
+   "ratio": 0.58
+  },
+  {
+   "ticker": "AAOI",
+   "name": "Applied Optoelectronics",
+   "mentions": 31,
+   "unique_authors": null,
+   "upvotes": 47,
+   "cashtag_pct": null,
+   "prev_24h": 3,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 40.26,
+    "chg_1d": -10.97,
+    "chg_5d": -27.93,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 31
+    }
+   ],
+   "baseline": 0.0,
+   "ratio": 31.0
+  },
+  {
+   "ticker": "AM",
+   "name": "Antero Midstream",
+   "mentions": 30,
+   "unique_authors": null,
+   "upvotes": 46,
+   "cashtag_pct": null,
+   "prev_24h": 33,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 20.28,
+    "chg_1d": 0.12,
+    "chg_5d": 1.32,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 18
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 32
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 30
+    }
+   ],
+   "baseline": 19.0,
+   "ratio": 1.58
+  },
+  {
+   "ticker": "GLD",
+   "name": "SSgA SPDR Gold Shares",
+   "mentions": 28,
+   "unique_authors": null,
+   "upvotes": 59,
+   "cashtag_pct": null,
+   "prev_24h": 10,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 341.31,
+    "chg_1d": -3.17,
+    "chg_5d": -6.53,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 0
     },
     {
      "date": "2026-11-18",
      "mentions": 28
     }
    ],
-   "baseline": 14.0,
-   "ratio": 2.0
+   "baseline": 0.0,
+   "ratio": 28.0
   },
   {
-   "ticker": "TQQQ",
-   "name": "ProShares Trust - ProShares UltraPro QQQ",
+   "ticker": "AAPL",
+   "name": "Apple",
    "mentions": 27,
    "unique_authors": null,
-   "upvotes": 53,
+   "upvotes": 83,
    "cashtag_pct": null,
-   "prev_24h": 16,
+   "prev_24h": 37,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 51.81,
-    "chg_1d": -2.3,
-    "chg_5d": -8.4,
-    "asof": "2026-11-17"
+    "last": 351.81,
+    "chg_1d": -0.03,
+    "chg_5d": -1.0,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -968,35 +931,35 @@
     },
     {
      "date": "2026-11-16",
-     "mentions": 0
+     "mentions": 32
     },
     {
      "date": "2026-11-17",
-     "mentions": 17
+     "mentions": 34
     },
     {
      "date": "2026-11-18",
      "mentions": 27
     }
    ],
-   "baseline": 5.7,
-   "ratio": 4.76
+   "baseline": 22.0,
+   "ratio": 1.23
   },
   {
    "ticker": "MSFT",
    "name": "Microsoft",
-   "mentions": 25,
+   "mentions": 26,
    "unique_authors": null,
-   "upvotes": 47,
+   "upvotes": 54,
    "cashtag_pct": null,
-   "prev_24h": 38,
+   "prev_24h": 30,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 506.24,
-    "chg_1d": -2.27,
-    "chg_5d": -5.05,
-    "asof": "2026-11-17"
+    "last": 506.45,
+    "chg_1d": 0.04,
+    "chg_5d": -2.82,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -1013,27 +976,101 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 25
+     "mentions": 26
     }
    ],
    "baseline": 23.7,
-   "ratio": 1.06
+   "ratio": 1.1
   },
   {
-   "ticker": "GLD",
-   "name": "SSgA SPDR Gold Shares",
+   "ticker": "TSLA",
+   "name": "Tesla",
    "mentions": 24,
    "unique_authors": null,
-   "upvotes": 42,
+   "upvotes": 68,
    "cashtag_pct": null,
-   "prev_24h": 9,
+   "prev_24h": 27,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 352.48,
-    "chg_1d": -0.13,
-    "chg_5d": -4.57,
-    "asof": "2026-11-17"
+    "last": 382.92,
+    "chg_1d": 0.74,
+    "chg_5d": -2.03,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 24
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 24
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 24
+    }
+   ],
+   "baseline": 18.3,
+   "ratio": 1.31
+  },
+  {
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "mentions": 22,
+   "unique_authors": null,
+   "upvotes": 49,
+   "cashtag_pct": null,
+   "prev_24h": 11,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 353.76,
+    "chg_1d": 3.56,
+    "chg_5d": 2.47,
+    "asof": "2026-11-18"
+   },
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 7
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 14
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 17
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 22
+    }
+   ],
+   "baseline": 12.7,
+   "ratio": 1.74
+  },
+  {
+   "ticker": "NOW",
+   "name": "ServiceNow",
+   "mentions": 22,
+   "unique_authors": null,
+   "upvotes": 123,
+   "cashtag_pct": null,
+   "prev_24h": 25,
+   "sentiment": null,
+   "samples": [],
+   "price": {
+    "last": 90.66,
+    "chg_1d": -2.41,
+    "chg_5d": -11.77,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -1046,31 +1083,31 @@
     },
     {
      "date": "2026-11-17",
-     "mentions": 0
+     "mentions": 21
     },
     {
      "date": "2026-11-18",
-     "mentions": 24
+     "mentions": 22
     }
    ],
-   "baseline": 0.0,
-   "ratio": 24.0
+   "baseline": 7.0,
+   "ratio": 3.14
   },
   {
    "ticker": "YOU",
    "name": "CLEAR Secure",
-   "mentions": 24,
+   "mentions": 22,
    "unique_authors": null,
-   "upvotes": 80,
+   "upvotes": 47,
    "cashtag_pct": null,
-   "prev_24h": 16,
+   "prev_24h": 23,
    "sentiment": null,
    "samples": [],
    "price": {
-    "last": 54.6,
-    "chg_1d": -2.81,
-    "chg_5d": -2.05,
-    "asof": "2026-11-17"
+    "last": 54.78,
+    "chg_1d": 0.32,
+    "chg_5d": -1.15,
+    "asof": "2026-11-18"
    },
    "history": [
     {
@@ -1087,144 +1124,20 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 24
+     "mentions": 22
     }
    ],
    "baseline": 13.7,
-   "ratio": 1.76
-  },
-  {
-   "ticker": "ON",
-   "name": "ON Semiconductor",
-   "mentions": 20,
-   "unique_authors": null,
-   "upvotes": 48,
-   "cashtag_pct": null,
-   "prev_24h": 14,
-   "sentiment": null,
-   "samples": [],
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 14
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 20
-    }
-   ],
-   "baseline": 4.7,
-   "ratio": 4.29
-  },
-  {
-   "ticker": "NFLX",
-   "name": "Netflix",
-   "mentions": 19,
-   "unique_authors": null,
-   "upvotes": 144,
-   "cashtag_pct": null,
-   "prev_24h": 16,
-   "sentiment": null,
-   "samples": [],
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 10
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 19
-    }
-   ],
-   "baseline": 3.3,
-   "ratio": 5.7
-  },
-  {
-   "ticker": "SOXX",
-   "name": "BlackRock Institutional Trust Company N.A. - BTC iShares PHLX Semicond",
-   "mentions": 19,
-   "unique_authors": null,
-   "upvotes": 26,
-   "cashtag_pct": null,
-   "prev_24h": 7,
-   "sentiment": null,
-   "samples": [],
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 19
-    }
-   ],
-   "baseline": 0.0,
-   "ratio": 19.0
-  },
-  {
-   "ticker": "ALL",
-   "name": "Allstate",
-   "mentions": 18,
-   "unique_authors": null,
-   "upvotes": 77,
-   "cashtag_pct": null,
-   "prev_24h": 17,
-   "sentiment": null,
-   "samples": [],
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 7
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 15
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 18
-    }
-   ],
-   "baseline": 7.3,
-   "ratio": 2.45
+   "ratio": 1.61
   },
   {
    "ticker": "VOO",
    "name": "Vanguard S&amp;P 500 ETF",
-   "mentions": 18,
+   "mentions": 21,
    "unique_authors": null,
-   "upvotes": 40,
+   "upvotes": 157,
    "cashtag_pct": null,
-   "prev_24h": 37,
+   "prev_24h": 39,
    "sentiment": null,
    "samples": [],
    "history": [
@@ -1242,82 +1155,20 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 18
+     "mentions": 21
     }
    ],
    "baseline": 18.7,
-   "ratio": 0.96
-  },
-  {
-   "ticker": "INTC",
-   "name": "Intel",
-   "mentions": 17,
-   "unique_authors": null,
-   "upvotes": 31,
-   "cashtag_pct": null,
-   "prev_24h": 36,
-   "sentiment": null,
-   "samples": [],
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 23
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 36
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 17
-    }
-   ],
-   "baseline": 19.7,
-   "ratio": 0.86
-  },
-  {
-   "ticker": "IQ",
-   "name": "iQIYI",
-   "mentions": 17,
-   "unique_authors": null,
-   "upvotes": 24,
-   "cashtag_pct": null,
-   "prev_24h": 6,
-   "sentiment": null,
-   "samples": [],
-   "history": [
-    {
-     "date": "2026-11-15",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-16",
-     "mentions": 13
-    },
-    {
-     "date": "2026-11-17",
-     "mentions": 0
-    },
-    {
-     "date": "2026-11-18",
-     "mentions": 17
-    }
-   ],
-   "baseline": 4.3,
-   "ratio": 3.92
+   "ratio": 1.12
   },
   {
    "ticker": "GME",
    "name": "GameStop",
-   "mentions": 17,
+   "mentions": 21,
    "unique_authors": null,
-   "upvotes": 206,
+   "upvotes": 232,
    "cashtag_pct": null,
-   "prev_24h": 6,
+   "prev_24h": 9,
    "sentiment": null,
    "samples": [],
    "history": [
@@ -1335,20 +1186,51 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 17
+     "mentions": 21
     }
    ],
    "baseline": 7.7,
-   "ratio": 2.22
+   "ratio": 2.74
+  },
+  {
+   "ticker": "WEN",
+   "name": "Wendy’s Company",
+   "mentions": 18,
+   "unique_authors": null,
+   "upvotes": 23,
+   "cashtag_pct": null,
+   "prev_24h": 12,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 18
+    }
+   ],
+   "baseline": 0.0,
+   "ratio": 18.0
   },
   {
    "ticker": "IREN",
    "name": "Iris Energy",
-   "mentions": 17,
+   "mentions": 18,
    "unique_authors": null,
    "upvotes": 42,
    "cashtag_pct": null,
-   "prev_24h": 33,
+   "prev_24h": 21,
    "sentiment": null,
    "samples": [],
    "history": [
@@ -1366,20 +1248,20 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 17
+     "mentions": 18
     }
    ],
    "baseline": 15.0,
-   "ratio": 1.13
+   "ratio": 1.2
   },
   {
-   "ticker": "AMZN",
-   "name": "Amazon",
-   "mentions": 16,
+   "ticker": "META",
+   "name": "Meta Platforms (Facebook)",
+   "mentions": 18,
    "unique_authors": null,
-   "upvotes": 35,
+   "upvotes": 45,
    "cashtag_pct": null,
-   "prev_24h": 18,
+   "prev_24h": 12,
    "sentiment": null,
    "samples": [],
    "history": [
@@ -1389,7 +1271,7 @@
     },
     {
      "date": "2026-11-16",
-     "mentions": 17
+     "mentions": 0
     },
     {
      "date": "2026-11-17",
@@ -1397,42 +1279,166 @@
     },
     {
      "date": "2026-11-18",
-     "mentions": 16
+     "mentions": 18
     }
    ],
-   "baseline": 5.7,
-   "ratio": 2.82
+   "baseline": 0.0,
+   "ratio": 18.0
   },
   {
-   "ticker": "PR",
-   "name": "Permian Resources",
+   "ticker": "ALL",
+   "name": "Allstate",
    "mentions": 16,
    "unique_authors": null,
-   "upvotes": 134,
+   "upvotes": 75,
    "cashtag_pct": null,
-   "prev_24h": 13,
+   "prev_24h": 19,
    "sentiment": null,
    "samples": [],
    "history": [
     {
      "date": "2026-11-15",
+     "mentions": 7
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 15
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 16
+    }
+   ],
+   "baseline": 7.3,
+   "ratio": 2.18
+  },
+  {
+   "ticker": "UP",
+   "name": "Wheels Up",
+   "mentions": 16,
+   "unique_authors": null,
+   "upvotes": 17,
+   "cashtag_pct": null,
+   "prev_24h": 7,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-16",
      "mentions": 12
     },
     {
-     "date": "2026-11-16",
-     "mentions": 11
-    },
-    {
      "date": "2026-11-17",
-     "mentions": 17
+     "mentions": 0
     },
     {
      "date": "2026-11-18",
      "mentions": 16
     }
    ],
-   "baseline": 13.3,
-   "ratio": 1.2
+   "baseline": 4.0,
+   "ratio": 4.0
+  },
+  {
+   "ticker": "INTC",
+   "name": "Intel",
+   "mentions": 15,
+   "unique_authors": null,
+   "upvotes": 121,
+   "cashtag_pct": null,
+   "prev_24h": 34,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 23
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 36
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 15
+    }
+   ],
+   "baseline": 19.7,
+   "ratio": 0.76
+  },
+  {
+   "ticker": "ON",
+   "name": "ON Semiconductor",
+   "mentions": 15,
+   "unique_authors": null,
+   "upvotes": 40,
+   "cashtag_pct": null,
+   "prev_24h": 16,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 14
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 15
+    }
+   ],
+   "baseline": 4.7,
+   "ratio": 3.21
+  },
+  {
+   "ticker": "TSM",
+   "name": "TSMC",
+   "mentions": 14,
+   "unique_authors": null,
+   "upvotes": 25,
+   "cashtag_pct": null,
+   "prev_24h": 3,
+   "sentiment": null,
+   "samples": [],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-16",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-17",
+     "mentions": 0
+    },
+    {
+     "date": "2026-11-18",
+     "mentions": 14
+    }
+   ],
+   "baseline": 0.0,
+   "ratio": 14.0
   }
  ],
  "notes": [
